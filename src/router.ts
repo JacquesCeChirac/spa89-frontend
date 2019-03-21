@@ -14,6 +14,11 @@ export default new Router({
       component: Home,
     },
     {
+        path: '*',
+        redirect: '/404',
+        component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+    },
+    {
       path: '/about',
       name: 'about',
       // route level code-splitting
