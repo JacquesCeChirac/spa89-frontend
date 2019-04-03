@@ -5,7 +5,7 @@
         <span></span>
         <v-menu offset-y>
           <v-btn slot="activator" color="#03a130" dark>
-            Accueil
+            <a href="/">Accueil</a>
           </v-btn>
         </v-menu>
         <v-menu offset-y open-on-hover=true >
@@ -74,6 +74,22 @@
 
     <v-content style="background: linear-gradient(#fff,#fff 40%,#d1ede0);">
       <router-view></router-view>
+      <v-flex
+          xs12
+          mb-5
+      >
+        <v-layout justify-center>
+          <a
+              v-for="(link, i) in footerLinks"
+              :key="i"
+              :href="link.href"
+              class="subheading mx-3"
+              target="_blank"
+          >
+            {{ link.text }}
+          </a>
+        </v-layout>
+      </v-flex>
     </v-content>
   </v-app>
 </template>
@@ -124,6 +140,24 @@ export default {
       { title: `Assemblées générales`, route : `assemblees` },
       { title: `Journées portes ouvertes`, route : `jpo` },
       { title: `Bulletin info`, route : `bulletin` }
+    ],
+    footerLinks: [
+      {
+        text: '©SPA-Auxerre-89',
+        href: 'https://www.facebook.com/SPA89OFFICIEL/',
+      },
+      {
+        text: 'Plan du site',
+        href: '/plan',
+      },
+      {
+        text: 'Mentions légales',
+        href: '/legales',
+      },
+      {
+        text: 'Nous trouver',
+        href: 'https://goo.gl/maps/cT2wCiZL7Jz',
+      },
     ]
   }
   }
