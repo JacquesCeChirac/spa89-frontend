@@ -7,7 +7,6 @@
                 <h1 class="text-xs-center display-2 font-weight-bold mb-3">ACTUALITES</h1>
                 <h2 class="text-xs-center" id="green-one">LES ASSOCIATIONS INDEPENDANTES DENONCENT LES MANŒUVRES DE LA SPA</h2>
                 <h3 class="text-xs-center">On ignore trop souvent qu’il y a en France deux grands réseaux de défense animale :</h3>
-                <br>
                 <p>-	La Confédération Nationale Défense de l’Animal, qui regroupe plus de 260 associations et refuges indépendants et autonomes répartis sur 95 départements.
                     Ces refuges accueillent chaque année près de 180 000 chiens, chats, animaux de ferme, mais aussi des animaux sauvages, des oiseaux et des animaux marins…,
                     nourris, hébergés et soignés par plus de 1200 salariés et 3 000 bénévoles locaux dévoués à la défense des animaux.
@@ -29,9 +28,8 @@
                     C’est absolument vital pour les dizaines de milliers de chiens et chats, de chevaux et d’animaux de ferme qui, du fait de l’amalgame,
                     risquent d’être les victimes des manœuvres de la SPA sise à Paris.
                 </p>
-                <br>
+
                 <h2 class="text-xs-center">INFORMATION</h2>
-                <br>
                 <p>La Confédération Nationale Défense de l’Animal de Lyon dont la SPA 89 AUXERRE dépend,
                     nous informe que des associations nationales de protection animale envoient massivement de nombreux mailings, postaux ou électroniques.
                     Ces mailings vous arrivent parfois et certains d’entre vous font des dons à ces associations en pensant que ceux-ci vont profiter à notre refuge.
@@ -40,9 +38,8 @@
                 <p>Lorsque vous souhaitez faire un don, ou prendre une adhésion, nous vous recommandons de vous adresser soit directement à la SPA 89 AUXERRE,
                     ou à la Confédération Nationale de Lyon, en précisant à qui vous destinez ce don ou cette adhésion.
                 </p>
-                <br>
+
                 <h2 class="text-xs-center">APPEL A BENEVOLAT</h2>
-                <br>
                 Nous recherchons des bénévoles :
                 <ul>
                     <li>Pour aider l’équipe de suivis d’adoptions,</li>
@@ -51,7 +48,7 @@
                     <li>Pour promener les chiens, et câliner les chats,</li>
                     <li>Pour faire des travaux de jardinage</li>
                 </ul>
-                <br>
+
                 Très grand merci à vous.
             </v-flex>
         </v-layout>
@@ -68,6 +65,10 @@
     }
     #green-one {
         color: rgb(3, 161, 48);
+    }
+    h1, h2, h3 {
+        margin-bottom: 25px;
+        margin-top: 25px;
     }
     h2 {
         color:red;

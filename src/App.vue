@@ -74,36 +74,35 @@
 
     <v-content style="background: linear-gradient(#fff,#fff 40%,#d1ede0);">
       <router-view></router-view>
-      <v-flex
-          xs12
-          mb-5
-      >
+      <footer class="v-footer theme--light secondary darken-2" style="height:auto; background-color: rgb(3, 161, 48)!important">
         <v-layout justify-center>
           <a
               v-for="(link, i) in footerLinks"
               :key="i"
               :href="link.href"
-              class="subheading mx-3"
+              class="subheading mx-3 v-btn__content white--text"
               target="_blank"
           >
             {{ link.text }}
           </a>
         </v-layout>
-      </v-flex>
+      </footer>
     </v-content>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
+import Accueil from './components/Accueil'
+import {Services} from "./Services"
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
   },
   data () {
     return {
+      menu: [],
+      footer: [],
       SPA: [
         { title: `Présentation`, route : `presentation` },
         { title: `Actualités`, route : `actualites` },
@@ -160,6 +159,21 @@ export default {
       },
     ]
   }
+  },
+  created() {
+    Services.getMenu().then(resp => {
+      this.menu = resp.data
+    })
+    console.log("1")
+    console.log(this.footer)
+    Services.getFooter().then(resp => {
+      this.footer = resp.data
+    })
+    console.log("2")
+    console.log(this.footer)
+  },
+  methods: {
+
   }
 }
 </script>
@@ -167,5 +181,8 @@ export default {
   a{
     color: black !important;
     text-decoration: none;
+  }
+  html, body {
+    height: 100%;
   }
 </style>
