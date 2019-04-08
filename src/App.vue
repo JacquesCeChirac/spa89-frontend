@@ -98,6 +98,7 @@ import {Services} from "./Services"
 export default {
   name: 'App',
   components: {
+    Accueil
   },
   data () {
     return {
@@ -160,7 +161,7 @@ export default {
     ]
   }
   },
-  created() {
+/*  created() {
     Services.getMenu().then(resp => {
       this.menu = resp.data
     })
@@ -174,7 +175,7 @@ export default {
   },
   methods: {
 
-  }
+  }*/
 }
 </script>
 <style>

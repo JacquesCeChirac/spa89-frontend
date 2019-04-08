@@ -1,3 +1,4 @@
+/*
 
 import Vue from 'vue'
 
@@ -34,3 +35,4 @@ export const Services = new Vue({
     }
   }
 })
+*/
