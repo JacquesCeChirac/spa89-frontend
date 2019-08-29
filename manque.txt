@@ -1,0 +1,5 @@
+deleted:    src/assets/docs/ACTUALITES.docx
+	deleted:    src/assets/docs/L'EQUIPE.docx
+	deleted:    src/assets/docs/PRESENTATION.docx
+	deleted:    src/assets/docs/~$EQUIPE.docx
+	deleted:    src/assets/logoSPA89.jpeg
